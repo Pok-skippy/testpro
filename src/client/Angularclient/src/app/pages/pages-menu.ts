@@ -13,6 +13,37 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/iot-dashboard',
   },
   {
+    title: 'Krister lekstuga',
+    group: true,
+  },
+  {
+    title: 'Lekis 1',
+    icon: 'home-outline',
+    link: '/pages/iot-dashboard',
+  },
+  {
+    title: 'Forms',
+    icon: 'edit-2-outline',
+    children: [
+      {
+        title: 'Form Inputs',
+        link: '/pages/forms/inputs',
+      },
+      {
+        title: 'Form Layouts',
+        link: '/pages/forms/layouts',
+      },
+      {
+        title: 'Buttons',
+        link: '/pages/forms/buttons',
+      },
+      {
+        title: 'Datepicker',
+        link: '/pages/forms/datepicker',
+      },
+    ],
+  },
+  {
     title: 'FEATURES',
     group: true,
   },
