@@ -44,6 +44,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ],
   },
   {
+    title: 'Stoffe',
+    icon: 'edit-2-outline',
+    children: [
+      {
+        title: 'Page1',
+        link: '/pages/stoffe/page1',
+      }
+    ],
+  },
+  {
     title: 'FEATURES',
     group: true,
   },

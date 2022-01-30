@@ -27,6 +27,10 @@ const routes: Routes = [{
       path: 'forms',
       loadChildren: () => import('./forms/forms.module')
         .then(m => m.FormsModule),
+    }, {
+      path: 'stoffe',
+      loadChildren: () => import('./stoffe/stoffe.module')
+        .then(m => m.StoffeModule),
     },
     {
       path: 'ui-features',
