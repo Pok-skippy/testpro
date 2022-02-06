@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './idcompagelogin.component.html',
 })
 export class PageLoginComponent {
+
+
 
 
 

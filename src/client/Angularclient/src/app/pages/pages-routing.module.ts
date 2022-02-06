@@ -32,7 +32,7 @@ const routes: Routes = [{
       path: 'idcom',
       loadChildren: () => import('./idcom/idcomlogin.module')
         .then(m => m.IdcomLoginModule),
-    }, 
+    },   
     {
       path: 'stoffe',
       loadChildren: () => import('./stoffe/stoffe.module')

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
   `,
 })
 export class IdcomLoginComponent {
+
+}
+export class IdcomRegisterComponent {
 }

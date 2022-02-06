@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { IdcomLoginComponent } from './idcomlogin.component';
 import { PageLoginComponent } from './pagelogin/idcompagelogin.component';
+//import { PageRegisterComponent } from './pageregister/idcompageregister.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,13 @@ const routes: Routes = [
         path: 'pagelogin',
         component: PageLoginComponent,
       },
+ /*     {
+        path: 'pageregister',
+        component: PageRegisterComponent,
+      },
+*/
     ],
+
   },
 ];
 
