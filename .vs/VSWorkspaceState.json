@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src\\client",
+    "\\src\\client\\Angularclient"
   ],
-  "SelectedNode": "\\package-lock.json",
+  "SelectedNode": "\\readme.txt",
   "PreviewInSolutionExplorer": false
 }

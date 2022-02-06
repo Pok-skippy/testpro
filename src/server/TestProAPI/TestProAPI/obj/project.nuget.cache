@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JxcWMg8JXEMaJIHw+oyDNVdae4QBxOIKPAvpErjr0qcFkP8D6y7nqUr/X1pRbBxBUksi/Ip9fhAhSjQg6BCKBw==",
+  "dgSpecHash": "/1hCiZHcJ10b+7muqZRnJPEJfZuaAOiMlgfwfO+VX/EeFKvn0XF/fsIy5TZfKeWNvG6j7atkQ1fNJYH93gscuw==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\skippy\\testpro\\src\\server\\TestProAPI\\TestProAPI\\TestProAPI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Test\\testpro\\src\\server\\TestProAPI\\TestProAPI\\TestProAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\krill\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\krill\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\krill\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\krill\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

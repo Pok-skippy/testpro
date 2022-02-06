@@ -21,3 +21,19 @@ Skapa sida "Login"
 med ett formulär.
 
 git push
+
+Postman
+
+service class angular
+
+in i contruktorn
+
+
+dropdown mellan email och login
+dynamisk antal värden
+dom senaste användare
+Select
+2st
+
+en for loop och en med bindings
+
