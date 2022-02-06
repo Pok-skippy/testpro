@@ -28,12 +28,11 @@ httpParams: HttpParams;
 
    login(){
      try{
-      var res = this.http.get("https://localhost:44340/api/login?usr=" +this.user +"&pwd=" +this.pwd);
-      res = res;
-      // var res = this.http.get<user>("https://localhost:44340/api/login?usr=" +this.user +"&pwd=" +this.pwd, {httpHeaders: this.httpHeaders; responseType: 'json'});
-      //   res.forEach(u =>{
-      //       u=u;
-      //   });
+    
+       var res = this.http.get<user>("https://localhost:44340/api/login?usr=" +this.user +"&pwd=" +this.pwd);
+         res.forEach(u =>{
+             u=u;
+         });
      }catch(ex){
       ex = ex;
      }
