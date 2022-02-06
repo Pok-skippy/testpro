@@ -8,8 +8,19 @@ import { Component } from '@angular/core';
 })
 export class PageLoginComponent {
 
+  user: string = "";
+  pwd: string = "";
 
+  placeHolderUser :string = "Email";
+  placeHolderPwd :string = "Lösenord";
 
+  PageLoginComponent(){
+
+  }
+
+   login(){
+     alert("Login: " + this.user);
+   }
 
 
   }
