@@ -11,7 +11,7 @@
         <form class="form-inline">
         <div class="full-name-inputs">
           <input type="text" nbInput fullWidth [value]="user" (change)='user = $event.target.value' [placeholder]="placeHolderUser">
-          <input type="text" nbInput fullWidth [value]="pwd"  (change)='pwd = $event.target.value' [placeholder]="placeHolderPwd">
+          <input type="password" nbInput fullWidth [value]="pwd"  (change)='pwd = $event.target.value' [placeholder]="placeHolderPwd">
         </div>
         <div class="offset-sm-3 col-sm-9">
           <button  nbButton status="primary" (click)="login()">Logga in</button>
