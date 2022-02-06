@@ -17,9 +17,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
-    title: 'Lekis 1',
-    icon: 'home-outline',
-    link: '/pages/iot-dashboard',
+    title: 'Idcom',
+    icon: 'lock-outline',
+    link: '/pages/idcom',
   },
   {
     title: 'Forms',

@@ -27,7 +27,13 @@ const routes: Routes = [{
       path: 'forms',
       loadChildren: () => import('./forms/forms.module')
         .then(m => m.FormsModule),
-    }, {
+    }, 
+    {
+      path: 'idcom',
+      loadChildren: () => import('./idcom/idcomlogin.module')
+        .then(m => m.IdcomLoginModule),
+    }, 
+    {
       path: 'stoffe',
       loadChildren: () => import('./stoffe/stoffe.module')
         .then(m => m.StoffeModule),
