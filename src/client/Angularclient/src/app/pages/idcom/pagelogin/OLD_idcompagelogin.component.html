@@ -14,31 +14,31 @@
           <input type="password" nbInput fullWidth [value]="pwd"  (change)='pwd = $event.target.value' [placeholder]="placeHolderPwd">
         </div>
         <div class="offset-sm-3 col-sm-9">
+          <nb-select [(selected)]="status">
+            <nb-option *ngFor="let t of types" [value]="t">{{ t }}</nb-option>
+          </nb-select>
           <div *ngIf="testBoolean == true">
             <nb-select (selectedChange)="mySelectedChanged($event)">
               <nb-option *ngFor="let t of myTypes" [value]="t">{{ t.name}}</nb-option>
             </nb-select>
-            <h1>hopp: {{mySelected?.name}}</h1>
           </div>
-
+          <h1>hopp: {{mySelected?.name}}</h1>
         </div>
         <div class="col-md-6 col-sm-12">
           <div>
-            <nb-checkbox [(ngModel)]="klick" (change)="onBockChange($event)">Klicka</nb-checkbox>
-            <div *ngIf="klick">
-              <nb-select (selectedChange)="mySelectedChanged($event)">
-                <nb-option *ngFor="let t of myTypes" [value]="t">{{ t.name}}</nb-option>
-              </nb-select>
-              <h1>hopp: {{mySelected?.name}}</h1>
+            <nb-checkbox [(ngModel)]="bock1">Hej hopp</nb-checkbox>
+            <div *ngIf="bock == true">
+              <p>Det funkar</p>
             </div>
         </div>
-
           <div>
             <nb-checkbox [(ngModel)]="bock2">Hej hoppsan</nb-checkbox>
           </div>
         </div>
         <div class="offset-sm-3 col-sm-9">
           <button  nbButton status="primary" (click)="onButtonClick()">Logga in</button>
+
+ 
         </div>
         <div class="offset-sm-3 col-sm-9">
 
