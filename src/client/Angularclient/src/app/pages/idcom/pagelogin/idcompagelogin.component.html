@@ -24,7 +24,7 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <div>
-            <nb-checkbox [(ngModel)]="klick" (change)="onBockChange($event)">Klicka</nb-checkbox>
+            <nb-checkbox (checkedChange)="onBockChange($event)">Klicka</nb-checkbox>
             <div *ngIf="klick">
               <nb-select (selectedChange)="mySelectedChanged($event)">
                 <nb-option *ngFor="let t of myTypes" [value]="t">{{ t.name}}</nb-option>

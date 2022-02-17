@@ -36,6 +36,7 @@ this.myTypes.push({id:3, name :"val3"});
   login : string = "";
   klick: boolean = false;
 
+  
   onBockChange(klick)
   {
    this.klick = !this.klick;
