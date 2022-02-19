@@ -13,28 +13,26 @@
           <input type="text" nbInput fullWidth [value]="user" (change)='user = $event.target.value' [placeholder]="placeHolderUser">
           <input type="password" nbInput fullWidth [value]="pwd"  (change)='pwd = $event.target.value' [placeholder]="placeHolderPwd">
         </div>
+
         <div class="offset-sm-3 col-sm-9">
-          <div *ngIf="testBoolean == true">
+          <div *ngIf="klick">
+            <label class="label col-sm-5 col-form-label">Logga in som : {{mySelected?.name}}</label>
             <nb-select (selectedChange)="mySelectedChanged($event)">
               <nb-option *ngFor="let t of myTypes" [value]="t">{{ t.name}}</nb-option>
             </nb-select>
-            <h1>hopp: {{mySelected?.name}}</h1>
+
           </div>
 
         </div>
         <div class="col-md-6 col-sm-12">
           <div>
             <nb-checkbox (checkedChange)="onBockChange($event)">Klicka</nb-checkbox>
-            <div *ngIf="klick">
-              <nb-select (selectedChange)="mySelectedChanged($event)">
-                <nb-option *ngFor="let t of myTypes" [value]="t">{{ t.name}}</nb-option>
-              </nb-select>
-              <h1>hopp: {{mySelected?.name}}</h1>
-            </div>
+            
         </div>
 
           <div>
             <nb-checkbox [(ngModel)]="bock2">Hej hoppsan</nb-checkbox>
+            <h1>hopp: {{mySelected?.name}}</h1>
           </div>
         </div>
         <div class="offset-sm-3 col-sm-9">

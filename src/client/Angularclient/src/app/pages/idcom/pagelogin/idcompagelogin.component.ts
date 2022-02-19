@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams  } from  '@angular/common/http';
 import { user } from './user';
-import { NbComponentStatus } from '@nebular/theme';
+
 
 @Component({
   selector: 'pagelogin',
@@ -14,9 +14,9 @@ export class PageLoginComponent {
 
 constructor(){
 this.myTypes = [];
-this.myTypes.push({id:1, name :"val1"});
-this.myTypes.push({id:2, name :"val2"});
-this.myTypes.push({id:3, name :"val3"});
+this.myTypes.push({id:1, name :"User"});
+this.myTypes.push({id:2, name :"Moderator"});
+this.myTypes.push({id:3, name :"Admin"});
 
 }
 
@@ -31,31 +31,15 @@ this.myTypes.push({id:3, name :"val3"});
   bockcheck: boolean = false;
   bock: boolean = false;
   bock2 = true;
-  status: NbComponentStatus = 'primary';
   information :string="Hej";
   login : string = "";
   klick: boolean = false;
 
   
-  onBockChange(klick)
+onBockChange(klick)
   {
    this.klick = !this.klick;
   }
- 
-
-  types: NbComponentStatus[] = [
-    'primary',
-    'success',
-    'info',
-    'warning',
-    'danger',
-  ];
- 
-
-
-
-
-
 onButtonClick()
   {
    this.testBoolean = !this.testBoolean;
@@ -72,6 +56,7 @@ this.mySelected = item;
 
 }
 
+  
 
 /*
 httpParams: HttpParams;
