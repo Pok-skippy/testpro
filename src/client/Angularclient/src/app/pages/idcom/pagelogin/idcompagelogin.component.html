@@ -32,11 +32,15 @@
 
           <div>
             <nb-checkbox [(ngModel)]="bock2">Hej hoppsan</nb-checkbox>
-            <h1>hopp: {{mySelected?.name}}</h1>
+
           </div>
         </div>
         <div class="offset-sm-3 col-sm-9">
-          <button  nbButton status="primary" (click)="onButtonClick()">Logga in</button>
+          <button  nbButton status="primary" (click)="counter('add')">Logga in</button><br>
+          <button (click)="counter('minus')">--</button>
+          <p>Antal : {{count}}</p>
+      
+
         </div>
         <div class="offset-sm-3 col-sm-9">
 
