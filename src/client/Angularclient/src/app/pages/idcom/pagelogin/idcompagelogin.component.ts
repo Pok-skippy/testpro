@@ -49,14 +49,12 @@ onButtonClick()
   count=0;
   counter(type:string){
     type==='add'?this.count++:this.count--
-  }
-
- while (count = 10) {
-    if (count >= 10) {
-      count = 0
+    if (this.count >= 10) {
+      this.count = 0
       this.count = 0
     }
- }
+  }
+
 myTypes: MyListObj[];
 mySelected: MyListObj = null;
 
