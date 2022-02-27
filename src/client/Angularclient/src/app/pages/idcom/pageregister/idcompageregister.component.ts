@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+/*import {
+  NgxPopoverCardComponent, NgxPopoverFormComponent,
+  NgxPopoverTabsComponent,
+} from './popover.e.component';
+*/
 
 @Component({
   selector: 'pageregister',
