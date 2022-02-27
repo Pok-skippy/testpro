@@ -37,7 +37,7 @@ this.myTypes.push({id:3, name :"Admin"});
   myTypes: MyListObj[];
   mySelected: MyListObj = null;
   count=0;
-  
+
   
 onBockChange(klick)
   {
@@ -49,18 +49,16 @@ onButtonClick()
     var i = 0;
 
   }
+
   counter(type:string){
     type==='add'?this.count++:this.count--
-  }
+    var  aitems = this.myTypes.filter(x => x.name.startsWith('A'))
+      if (this.count >= 10) {
+        this.count = 0
+      }
 
- while (count = 10) {
-    if (count >= 10) {
-      count = 0
-      this.count = 0
+
     }
- }
-myTypes: MyListObj[];
-mySelected: MyListObj = null;
 
 
 mySelectedChanged(item :MyListObj)

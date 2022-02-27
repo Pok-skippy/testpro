@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class PageRegisterComponent {
 
   constructor(){
-    this.myTypes = [];
-    this.myTypes.push({id:1, name :"User"});
-    this.myTypes.push({id:2, name :"Moderator"});
-    this.myTypes.push({id:3, name :"Admin"});
+    this.myTypes2 = [];
+    this.myTypes2.push({id:1, name :"User"});
+    this.myTypes2.push({id:2, name :"Moderator"});
+    this.myTypes2.push({id:3, name :"Admin"});
     
     }
 
@@ -25,8 +25,8 @@ export class PageRegisterComponent {
   placeHolderBePwd :string = "Bekräfta";
   klick: boolean = false;
   bockcheck: boolean = false;
-  myTypes: MyListObj[];
-  mySelected: MyListObj = null;
+  myTypes2: MyListObj2[];
+  mySelected2: MyListObj2 = null;
 
 
   onBockChange(klick)
@@ -34,9 +34,9 @@ export class PageRegisterComponent {
    this.klick = !this.klick;
   }
 
-  mySelectedChanged(item :MyListObj)
+  mySelectedChanged2(item :MyListObj2)
   {
-  this.mySelected = item;
+  this.mySelected2 = item;
   
   }
 
@@ -45,7 +45,7 @@ export class PageRegisterComponent {
 
 }
 
-interface MyListObj {
+interface MyListObj2 {
   id: number;
   name: string;
 }
