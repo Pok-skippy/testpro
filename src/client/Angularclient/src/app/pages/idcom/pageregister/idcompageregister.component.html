@@ -1,33 +1,49 @@
-
-
- 
-
-
 <div class="row">
-  <div class="col-lg-6">
-    <nb-card class="inline-form-card">
-      <nb-card-header>Hej!<br> Logga in med din mailadress.</nb-card-header>
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-header>Registrera konto</nb-card-header>
       <nb-card-body>
-        <form class="form-inline">
-        <div class="full-name-inputs">
-          <input type="text" nbInput fullWidth placeholder="Användarnamn">
-          <input type="text" nbInput fullWidth placeholder="Lösenord">
-        </div>
-        <div class="offset-sm-3 col-sm-9">
-          <button type="submit" nbButton status="primary">Logga in</button>
+        <form class="form-horizontal">
+          <div class="form-group row">
+            <label for="inputEmail3" class="label col-sm-3 form-control-label">Email</label>
+            <div class="col-sm-9">
+              <input type="text" nbInput fullWidth [value]="user" (change)='user = $event.target.value' [placeholder]="placeHolderUser">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="label col-sm-3 form-control-label">Lösenord</label>
+            <div class="col-sm-9">
+              <input type="password" nbInput fullWidth [value]="pwd"  (change)='pwd = $event.target.value' [placeholder]="placeHolderPwd">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="label col-sm-3 form-control-label">Lösenord</label>
+            <div class="col-sm-9">
+              <input type="password" nbInput fullWidth [value]="bePwd"  (change)='bePwd = $event.target.value' [placeholder]="placeHolderBePwd">
+            </div>
+          </div>
+          <div  class="form-group row" *ngIf="klick">
 
-        </div>
+            <label class="label col-sm-3 form-control-label">Registera som </label>
+            <nb-select  class="col-sm-9" (selectedChange)="mySelectedChanged($event)">
+              <nb-option *ngFor="let t of myTypes" [value]="t">{{ t.name}}</nb-option>
+            </nb-select>
 
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-3 col-sm-9">
+              <div class="checkbox">
+                <nb-checkbox (checkedChange)="onBockChange($event)">Behörighet</nb-checkbox>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-3 col-sm-9">
+              <button type="submit" nbButton status="warning">Register</button>
+            </div>
+          </div>
         </form>
-      </nb-card-body>
-      <nb-card-body>
-        <form class="form-inline">
-        <section class="another-action" aria-label="Register">
-          Har du inget konto?<a class="text-link" routerLink="../register">Register</a>
-        </section>
-      </form>
       </nb-card-body>
     </nb-card>
   </div>
 </div>
-

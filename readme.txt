@@ -37,3 +37,9 @@ Select
 
 en for loop och en med bindings
 
+registrerings sida
+namn lösen
+
+objekt som matchar
+skal som passar detta
+common

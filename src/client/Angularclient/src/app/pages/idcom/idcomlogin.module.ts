@@ -13,7 +13,7 @@ import {
 
 import { ThemeModule } from '../../@theme/theme.module';
 import { PageLoginComponent } from './pagelogin/idcompagelogin.component';
-// import { PageRegisterComponent } from './pageregister/idcompageregister.component';
+import { PageRegisterComponent } from './pageregister/idcompageregister.component';
 import { FormsModule as ngFormsModule } from '@angular/forms';
 import { IdcomLoginRoutingModule } from './idcomlogin-routing.module';
 import { IdcomLoginComponent } from './idcomlogin.component';
@@ -30,7 +30,7 @@ import { IdcomLoginComponent } from './idcomlogin.component';
     NbRadioModule,
     NbDatepickerModule,
     IdcomLoginRoutingModule,
-    // IdcomRegisterRoutingModule,  
+    //IdcomRegisterRoutingModule,  
     NbSelectModule,
     NbIconModule,
     ngFormsModule,
@@ -38,7 +38,8 @@ import { IdcomLoginComponent } from './idcomlogin.component';
   declarations: [
     IdcomLoginComponent,
     PageLoginComponent,
-    // IdcomRegisterRoutingModule,
+    //IdcomRegisterModule,
+    PageRegisterComponent,
   ],
 })
 export class IdcomLoginModule { }

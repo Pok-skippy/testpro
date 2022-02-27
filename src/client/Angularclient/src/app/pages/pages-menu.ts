@@ -21,27 +21,15 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'lock-outline',
     children: [
       {
-        title: 'Pagelogin',
+        title: 'Login',
         link: '/pages/idcom/pagelogin',
+      },
+      {
+        title: 'Register',
+        link: '/pages/idcom/pageregister',
       }
     ],
   },
-  /*
-  {
-    title: 'Idcom2',
-      icon: 'lock-outline',
-      children: [
-        {
-          title: 'Login',
-          link: '/pages/idcom2/login',
-        },
-        {
-          title: 'Register',
-          link: '/pages/idcom2/register',
-        }
-      ],
-    },
-   */
   {
     title: 'Forms',
     icon: 'edit-2-outline',

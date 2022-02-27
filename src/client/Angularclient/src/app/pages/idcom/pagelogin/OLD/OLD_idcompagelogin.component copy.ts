@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams  } from  '@angular/common/http';
-import { user } from './user';
+import { user } from '../user';
 
 
 @Component({
