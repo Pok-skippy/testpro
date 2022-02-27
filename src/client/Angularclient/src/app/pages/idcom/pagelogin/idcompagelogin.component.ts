@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams  } from  '@angular/common/http';
 import { user } from './user';
+import { PageLoginComponentService } from './idcompagelogin.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { user } from './user';
 export class PageLoginComponent {
 
 
-constructor(){
+constructor(public service: PageLoginComponentService){
 this.myTypes = [];
 this.myTypes.push({id:1, name :"User"});
 this.myTypes.push({id:2, name :"Moderator"});
@@ -21,7 +22,6 @@ this.myTypes.push({id:3, name :"Admin"});
 }
 
   title: string = 'Min första titel';
-  user: string = "";
   pwd: string = "";
 
   placeHolderUser :string = "Email";
@@ -51,15 +51,17 @@ onButtonClick()
   }
   counter(type:string){
     type==='add'?this.count++:this.count--
-    var  aitems = this.myTypes.filter(x => x.name.startsWith('A'))
-      if (this.count >= 10) {
-        this.count = 0
-      }
-
-  
   }
 
- 
+ while (count = 10) {
+    if (count >= 10) {
+      count = 0
+      this.count = 0
+    }
+ }
+myTypes: MyListObj[];
+mySelected: MyListObj = null;
+
 
 mySelectedChanged(item :MyListObj)
 {

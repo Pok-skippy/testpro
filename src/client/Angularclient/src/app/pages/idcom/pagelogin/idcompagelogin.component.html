@@ -4,14 +4,13 @@
 
 
 <div class="row">
-  <div class="col-lg-9">
-    <nb-card class="inline-form-card">
+    <nb-card class="fillStyle">
       <nb-card-header>Hej!<br> Logga in med din mailadress.</nb-card-header>
       <nb-card-body>
         <form class="form-inline">
         <div class="full-name-inputs">
-          <input type="text" nbInput fullWidth [value]="user" (change)='user = $event.target.value' [placeholder]="placeHolderUser">
-          <input type="password" nbInput fullWidth [value]="pwd"  (change)='pwd = $event.target.value' [placeholder]="placeHolderPwd">
+          <input type="text" nbInput fullWidth [value]="service.user" (change)='service.user = $event.target.value' [placeholder]="placeHolderUser">
+          <input class="myStyleText" type="password" nbInput fullWidth [value]="pwd"  (change)='pwd = $event.target.value' [placeholder]="placeHolderPwd">
         </div>
 
         <div class="offset-sm-3 col-sm-9">
@@ -47,6 +46,12 @@
 
         </div>
         </form>
+      <div class="row" style="background-color: aqua;">
+        <div class="col-12" *ngFor="let t of myTypes" style="background-color:blue;">
+              {{t.name}}
+        </div>
+      </div>
+
       </nb-card-body>
       <nb-card-body>
         <form class="form-inline">
@@ -56,6 +61,5 @@
       </form>
       </nb-card-body>
     </nb-card>
-  </div>
 </div>
 
